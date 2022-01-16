@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General styles */
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  width: 100vw;
+  margin: 0 auto;
+  display: flex;
+  color: black;
+}
+.btn {
+  border-radius: 30px;
+  background-color: rgb(218, 25, 134);
+  color: rgb(24, 14, 14);
+  cursor: pointer;
+  transition: all 300ms;
+  width: 45%;
+  padding-left: 30px;
+  margin-top: 30px;
+}
+.btn:hover {
+  border: 1px solid rgb(36, 30, 33);
+  background-color: transparent;
+  color: deeppink;
+}
+
+/* Header starts */
+.nav-link {
+  color: rgb(41, 32, 32);
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  margin-left: 300px;
+  font-weight: 30px;
+}
+.name {
+  margin-top: 25px;
+  font-weight: 50px;
+}
+.header {
+  background-color: gainsboro;
+  margin-bottom: 10px;
+}
+.nav {
+  display: flex;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+  color: rgb(27, 17, 17);
+  display: inline-block;
+  padding: 20px;
+  font-size: 20px;
+}
+
+/* banner starts */
+.banner {
+  display: flex;
+  padding-left: 60px;
+  margin: 30px 0;
+  overflow: hidden;
+}
+
+.banner-title {
+  padding-left: 10px;
+  margin-top: 200px;
+}
+.banner-img {
+  width: 80%;
+  height: 80%;
+  padding-left: 50px;
+  transition: width 2s;
+}
+
+/*  product starts */
+.products-heading {
+  text-align: center;
+  padding-bottom: 20px;
+  font-weight: 30px;
+}
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  overflow: hidden;
+}
+.card {
+  background: whitesmoke;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.products-description {
+  padding: 10px;
+}
+.product-rating a {
+  color: rgb(241, 206, 8);
+}
+.product-pic {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+.more {
+  text-align: right;
+  color: red;
+  margin-top: 30px;
+}
+
+/* Global Partners */
+.partner {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding-left: 60px;
+  margin-bottom: 60px;
+}
+.globe {
+  text-align: center;
+  margin: 20px;
+}
+
+/* footer starts */
+footer {
+  padding: 50px 0;
+  text-align: center;
+}
+.footer {
+  background: black;
+  color: white;
+}
+footer img {
+  width: 30%;
+}
+i {
+  margin: 10px;
+}
+
+.fa-instagram {
+  color: rgb(255, 0, 140);
+}
+.fa-youtube {
+  color: rgb(226, 49, 49);
+}
+.fa-dribbble-square {
+  color: rgba(107, 107, 167, 0.89);
+}
+.fa-twitter {
+  color: rgb(113, 207, 207);
+}
+
+/* ----------------------
+       Media Queries
+  ------------------------*/
+@media (max-width: 768px) {
+  .banner,
+  .products {
+    grid-template-columns: 1fr;
+  }
+  .partner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 578px) {
+  .btn {
+    width: 80%;
+  }
+  footer img {
+    width: 50%;
+  }
+}
